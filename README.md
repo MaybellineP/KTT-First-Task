@@ -1,8 +1,19 @@
 # KTT-First-Task
-pokéApi with Express NodeJS is used for this activity.
+The first activity was made, an environment that connects to the pokéApi.
+For the design that choose an image in collage style of pokemons, according to this I chose the colors which are as follows: 
+#F6EAE0
+#FFFFFFFF
+#3D2511
+#FAAC58
+#000000
+For the
 
-This page is responsive using the dimensions provided by https://accounts.lambdatest.com/login.
+Then for the responsive part we have used the dimensions provided by https://accounts.lambdatest.com/login. This alternative was chosen because of the different devices it handles.
 
-It was developed in the Express NodeJS environment, if you are looking to edit the site structure look for C:\Userservers KEYviews, then click on index.ejs.
+You know how easy it is to adapt to the express environment, let me tell you that. In addition to the installation of Express, it was necessary to use libraries such as Fetch, to create the function to extract elements from the pokéApi.
 
-You will see how it also makes use of the .ejs files, that helps to pass data to our view or to be able to use a part of the view in multiple pages, without being doing it again.
+Besides the structure that express presents, I added 2 more files, the first one is fuctions.js located in the javascript folder, where you can see the function I used to connect to pokéapi and then I added a file menu.ejs in a new folder called "pieces", I did this with the intention of separating the menu from the main page, in case in the future I have to create more pages and keep the same menu piece.
+
+For the rest, I consider that you will know where you are going to be able to visualize the multimedia content of the page.
+
+Translated with www.DeepL.com/Translator (free version)
