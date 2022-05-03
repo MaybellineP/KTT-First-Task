@@ -1,0 +1,426 @@
+body {
+  font            : 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(../images/Banner.jpg);
+  margin          : 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.main-container {
+  background           : #F6EAE0;
+  border               : solid #F6EAE0 4px;
+  display              : grid;
+  grid-gap             : 1%;
+  grid-template-columns: 20% auto;
+  width                : auto;
+  max-width            : 80vw;
+  margin               : 2vh auto;
+  height               : 95vh;
+}
+
+/*Left Side*/
+.profile {
+  padding: 2rem;
+}
+
+.imgProfile {
+  border-radius    : 150px;
+  height           : 100%;
+  width            : 100%;
+  background-size  : 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.menuMobile {
+  display: none;
+}
+
+.fa-solid,
+.fas {
+  font-family : "Font Awesome 6 Free";
+  font-weight : 900;
+  padding-top : 2.5vh;
+  padding-left: 2.5vw;
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+  cursor : pointer;
+  color  : white;
+}
+
+.fa-x:before {
+  content: "\58";
+  color  : white;
+}
+
+i#closeBtn {
+  cursor : pointer;
+  display: none;
+}
+
+.menu {
+  padding       : 0.5rem 2rem;
+  font-size     : 1.2rem;
+  text-align    : center;
+  height        : auto;
+  display       : grid;
+  font-family   : 'Times New Roman', serif;
+  text-transform: uppercase;
+  gap           : 1%;
+  text-align    : justify;
+}
+
+.menu a {
+  color          : #3D2511;
+  font-weight    : 700;
+  text-decoration: none;
+  padding        : 4% 0;
+  letter-spacing : 0.1em;
+  font-size      : 1rem;
+}
+
+.menu a:hover {
+  color: #FAAC58;
+}
+
+hr.line {
+  width     : 100%;
+  height    : 0.1vh;
+  background: #3D2511;
+}
+
+/*Right Side*/
+.conteiner2 {
+  border-left: solid white 8px;
+}
+
+.bannerTK {
+  height          : 20vh;
+  object-fit      : cover;
+  background-image: url(../images/Banner.jpg);
+  border-bottom   : solid white 8px;
+}
+
+.overlay {
+  width         : 100%;
+  height        : 100%;
+  background    : #FAFAFA;
+  opacity       : 0.7;
+  top           : 100%;
+  font-size     : 2rem;
+  color         : #3D2511;
+  font-weight   : 600;
+  font-family   : 'Times New Roman', serif;
+  text-align    : center;
+  text-transform: uppercase;
+  line-height   : calc(100% + 15.5vh);
+}
+
+.conteinerTK {
+  display              : grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  max-width            : 80%;
+  margin               : auto auto;
+  padding-top          : 1.5rem;
+  padding-bottom       : 1.5rem;
+}
+
+.pokeCard {
+  text-align      : center;
+  border          : solid 0;
+  margin          : 1rem auto;
+  width           : 73%;
+  box-shadow      : 0.4vw 0.8vh #928f8f;
+  background-image: url(../images/cardBG.jpg);
+}
+
+.pokeStyle {
+  margin-top   : 1em;
+  background   : white;
+  margin-bottom: 0.5em;
+}
+
+.pokeName {
+  border-top    : solid white 0.15rem;
+  color         : white;
+  padding-top   : 6%;
+  Font-family   : Copperplate, Copperplate Gothic Light, fantasy;
+  font-weight   : 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25vw;
+}
+
+/*Large devices (desktops, less than 1600px)*/
+@media (max-width: 1600px) {
+  .menu {
+    font-size: 1.1rem;
+  }
+
+  .main-container {
+    grid-template-columns: 19% auto;
+  }
+}
+
+/*Large devices (desktops, less than 1400px)*/
+@media (max-width: 1440px) {
+  .menu a {
+    font-size: 0.8rem;
+  }
+
+  .main-container {
+    height               : fit-content;
+    grid-template-columns: 20% auto;
+  }
+}
+
+/*Large devices (desktops, less than 1360px)*/
+@media (max-width: 1360px) {
+  .menu {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .main-container {
+    grid-template-columns: 20% auto;
+  }
+}
+
+/*Large devices (desktops, less than 1280px)*/
+@media (max-width: 1280px) {
+  .pokeCard {
+    width: 85%;
+  }
+
+  .pokeName {
+    font-size: 0.85em;
+  }
+
+  .menu {
+    font-size: 0.9rem;
+  }
+
+  .main-container {
+    grid-template-columns: 18% auto;
+    margin               : 1.8vh auto;
+  }
+
+  .profile {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+/*Large devices (desktops, less than 1280px)*/
+@media (width: 1280px) and (height: 1024px) {
+  .main-container {
+    height: 96vh;
+  }
+
+  .profile {
+    padding: 2rem 0.5rem;
+  }
+
+  .menu {
+    font-size: 1rem;
+  }
+}
+
+/*Large devices (desktops, less than 2560px)*/
+@media (width: 2560px) and (height: 1440px) {
+  .profile {
+    padding: 2rem 0.5rem;
+  }
+
+  .menu {
+    font-size: 1.1rem;
+  }
+
+  .main-container {
+    max-width: 1440px;
+  }
+}
+
+/*Large devices (desktops, less than 2560px)*/
+@media (width: 1024px) and (height: 1366px) {
+  .main-container {
+    grid-template-columns: 22% auto;
+  }
+
+  .profile {
+    padding: 1.3rem 1rem;
+  }
+
+  .overlay {
+    line-height: calc(100% + 10vh);
+  }
+
+  .bannerTK {
+    height: 12vh;
+  }
+
+  .menu {
+    padding: 0.3rem;
+  }
+}
+
+/*Large devices (desktops, less than 2560px)*/
+@media (width: 1600px) and (height: 2560px) {
+  .main-container {
+    grid-template-columns: 22% auto;
+  }
+
+  .profile {
+    padding: 1.3rem 1rem;
+  }
+
+  .overlay {
+    line-height: calc(100% + 10vh);
+  }
+
+  .bannerTK {
+    height: 12vh;
+  }
+
+  .menu {
+    padding: 0.3rem;
+  }
+}
+
+/*---------------------------------------------------------------------------------*/
+/*Large devices (desktops, less than 1024px)*/
+@media (max-width: 1024px) {
+  .menu {
+    font-size: 0.8rem;
+    padding  : 0.5rem 1rem;
+  }
+
+  .conteinerTK {
+    max-width: 90%;
+  }
+
+  .pokeName {
+    font-size: 0.85em;
+  }
+
+  .profile {
+    padding: 2rem 0.5rem;
+  }
+
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 992px) {
+  .conteinerTK {
+    grid-template-columns: 33.5% 33% 33.5%;
+  }
+
+  .main-container {
+    grid-template-columns: 22% auto;
+  }
+
+  .profile {
+    padding: 1.3rem 1rem;
+  }
+
+  .overlay {
+    line-height: calc(100% + 10vh);
+    font-size  : 1.8rem;
+  }
+
+  .bannerTK {
+    height: 12vh;
+  }
+
+  .menu {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 25% auto;
+  }
+}
+
+/*Extra small devices (portrait phones, less than 447px)*/
+@media (max-width: 447px) {
+  .pokeCard {
+    width: 75%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .profile {
+    max-width: 35%;
+    padding  : 0.5rem 0.5rem;
+    margin   : auto;
+  }
+
+  .imgProfile {
+    margin-top: 5vh;
+  }
+
+  .main-container {
+    border    : none;
+    display   : block;
+    max-width : 98vw;
+    height    : fit-content;
+    margin-top: 0;
+  }
+
+  .menuMobile {
+    display   : block;
+    position  : fixed;
+    background: #F3D488;
+    height    : 4.8vh;
+    width     : 98vw;
+    z-index   : 18;
+
+  }
+
+  hr.line {
+    background: white;
+  }
+
+  .menu {
+    display   : none;
+    position  : sticky;
+    background: #F3D488;
+    margin-top: calc(-100% + 25vh);
+    padding   : 50% 15%;
+    text-align: center;
+  }
+
+  .menu a {
+    color  : white;
+    display: block;
+  }
+
+  .conteinerTK {
+    padding-bottom       : 1.5rem;
+    border               : none;
+    grid-template-columns: 50% 50%;
+  }
+
+  .conteiner2 {
+    border: none;
+  }
+
+  .overlay {
+    line-height: calc(100% + 16vh);
+    font-size  : 1rem;
+  }
+
+  .bannerTK {
+    height        : 18vh;
+    border-bottom : solid 0.3rem white;
+    border-top    : solid 0.3rem white;
+    font-size     : 1.2rem;
+    letter-spacing: 1.5px;
+  }
+}

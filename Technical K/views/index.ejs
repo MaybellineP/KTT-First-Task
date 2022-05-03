@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="icon" type="img/png" sizes="32x32" href="/images/favicon.png">
+      <link rel='stylesheet' href='/stylesheets/style.css'/>
+      <script src="/javascripts/function.js"></script>
+      <script src="https://kit.fontawesome.com/401e4e3f06.js"
+        crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+      <div class="main-container">
+        <div id="conteiner1" class="conteiner1">
+          <div class="menuMobile">
+            <i class="fa-solid fa-lg fa-bars" onclick="mMobile()" id="mMobile"></i>
+            <i class="fa-solid fa-lg fa-x" id="closeBtn" onclick="menu()"></i>
+          </div>
+          <div class="profile">
+            <img class="imgProfile" src="../images/profile.JPG">
+          </div>
+          <div class="menu">
+            <%- include('./pieces/menu.ejs') %>
+            </div>
+          </div>
+          <div id="conteiner2" class="conteiner2">
+            <div class="bannerTK">
+              <div class="overlay">Maybelline Portillo</div>
+            </div>
+            <div class="conteinerTK">
+              <div class="pokeCard">
+                <img id="poke1_img" src="" class="pokeStyle">
+                <p id="poke1_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke2_img" src="" class="pokeStyle">
+                <p id="poke2_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke3_img" src="" class="pokeStyle">
+                <p id="poke3_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke4_img" src="" class="pokeStyle">
+                <p id="poke4_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke5_img" src="" class="pokeStyle">
+                <p id="poke5_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke6_img" src="" class="pokeStyle">
+                <p id="poke6_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke7_img" src="" class="pokeStyle">
+                <p id="poke7_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke8_img" src="" class="pokeStyle">
+                <p id="poke8_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke9_img" src="" class="pokeStyle">
+                <p id="poke9_name" class="pokeName"></p>
+              </div>
+              <div class="pokeCard">
+                <img id="poke10_img" src="" class="pokeStyle">
+                <p id="poke10_name" class="pokeName"></p>
+              </div>
+            </div>
+          </div>
+          <!--<h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>-->
+        </div>
+      </body>
+    </html>
