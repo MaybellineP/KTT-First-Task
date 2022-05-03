@@ -15,5 +15,3 @@ You know how easy it is to adapt to the express environment, let me tell you tha
 Besides the structure that express presents, I added 2 more files, the first one is fuctions.js located in the javascript folder, where you can see the function I used to connect to pokéapi and then I added a file menu.ejs in a new folder called "pieces", I did this with the intention of separating the menu from the main page, in case in the future I have to create more pages and keep the same menu piece.
 
 For the rest, I consider that you will know where you are going to be able to visualize the multimedia content of the page.
-
-Translated with www.DeepL.com/Translator (free version)
